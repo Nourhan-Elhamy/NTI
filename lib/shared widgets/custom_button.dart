@@ -7,7 +7,8 @@ class CustomButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final Color color;
   final String? image;
-  const CustomButton({super.key,  this.onPressed, required this.color,  this.image});
+  const CustomButton({super.key,  this.onPressed, required this.color,  this.image, required this.text});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +23,9 @@ class CustomButton extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(image!,height: 20,),
+
           SizedBox(width: 5),
-          Text('Place Bid', style: TextStyle(color: AppColors.white)),
+          Text(text, style: TextStyle(color: AppColors.white)),
         ],
       ),
     );

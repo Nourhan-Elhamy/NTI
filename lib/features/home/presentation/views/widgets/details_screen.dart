@@ -135,7 +135,7 @@ class NftDetailScreen extends StatelessWidget {
                   ),
 
 
-                  CustomButton(onPressed: (){},color: AppColors.black,image: AppImages.judge,)
+                  CustomButton(onPressed: (){},color: AppColors.black,image: AppImages.judge, text: 'Place Bid',)
                 ],
               ),
 

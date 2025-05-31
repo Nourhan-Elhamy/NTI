@@ -75,7 +75,7 @@ class NFTCard extends StatelessWidget {
                           Navigator.push(context, MaterialPageRoute(builder: (c){
                             return NftDetailScreen();
                           }));
-                        }, color: AppColors.black,image:AppImages.judge)
+                        }, color: AppColors.black,image:AppImages.judge, text: 'Place Bid',)
                     ),
 
 

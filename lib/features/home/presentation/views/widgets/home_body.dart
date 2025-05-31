@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nti_task/core/utls/app_images.dart';
+import 'package:nti_task/shared%20widgets/custom_button.dart';
 
 import '../../../../../core/utls/app_colors.dart';
 import '../../../../../shared widgets/custom_card.dart';
@@ -73,14 +74,7 @@ class HomeBody extends StatelessWidget {
                     ],
                   ),
                   const Spacer(),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.green,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                    ),
-                    child: Text("Follow",style: TextStyle(color: AppColors.white),),
-                  )
+                 CustomButton(color: AppColors.green, text: "Follow",onPressed: (){},)
                 ],
               )
             ],
